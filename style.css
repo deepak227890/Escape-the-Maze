@@ -1,0 +1,68 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    text-align: center;
+}
+
+/* Title Animation */
+.title {
+    font-size: 50px;
+    color: #0077ff;
+    animation: pulse 2s infinite;
+    margin-bottom: 50px;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        color: #0077ff;
+    }
+    50% {
+        transform: scale(1.2);
+        color: #0055aa;
+    }
+    100% {
+        transform: scale(1);
+        color: #0077ff;
+    }
+}
+
+/* Buttons */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background: #0077ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background: #0055aa;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    background: #003f77;
+}
